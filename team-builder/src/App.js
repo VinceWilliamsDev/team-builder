@@ -1,6 +1,8 @@
 import React, { useState }from 'react';
 import './App.css';
 import { v4 as uuid } from 'uuid'
+import TeamList from './TeamList'
+import TeamForm from './TeamForm'
 
 function App() {
   
@@ -22,7 +24,11 @@ function App() {
 
   return (
     <div className="App">
-
+      <header>
+        <h1>Meet the Team!</h1>
+      </header>
+      <TeamList />
+      <TeamForm />
     </div>
   );
 }
