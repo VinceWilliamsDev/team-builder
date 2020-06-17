@@ -1,7 +1,7 @@
-import react from 'react'
+import React from 'react'
 
-function TeamList() {
-
+function TeamForm() {
+    return null
 }
 
-export default TeamList
+export default TeamForm

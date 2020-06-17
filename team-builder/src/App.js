@@ -13,21 +13,24 @@ function App() {
       role: 'Engineer'
     }
   ]
-  
-  const formValues = {
+
+  const initialFormValues = {
     name: '',
     email: '',
     role: ''
   }
 
-  const { team, setTeam } = useState(initialTeam)
+  const [ team, setTeam ] = useState(initialTeam)
+  // console.log(team)
+
+  const [ formValues, setFormValues ] = useState(initialFormValues)
 
   return (
     <div className="App">
       <header>
         <h1>Meet the Team!</h1>
       </header>
-      <TeamList />
+      <TeamList team={team}/>
       <TeamForm />
     </div>
   );
